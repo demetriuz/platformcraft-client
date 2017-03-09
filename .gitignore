@@ -1,0 +1,6 @@
+.idea
+*.pyc
+env
+.env
+pip-*-build
+build/
