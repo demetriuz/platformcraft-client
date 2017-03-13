@@ -61,7 +61,7 @@ class PlatformcraftClient(object):
         return signed_full_endpoint_path_with_query
 
     def _api_get(self, *args, **kwargs):
-        return requests.get(*args, **kwargs)
+        return requests.get(*args, **kwargs).json()
 
     def _api_post(self, *args, **kwargs):
-        return requests.post(*args, **kwargs)
+        return requests.post(*args, **kwargs).json()
